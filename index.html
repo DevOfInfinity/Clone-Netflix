@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecalho">
+            <img id="logo-netflix" src="./img/netflix.svg" alt="logo-netflix">
+            <button id="botao-entrar">Entrar</button>
+        </div>
+
+        <div>
+            <h1>Acesso ilimitado a séries e filmes e muito mais.</h1>
+            <p id="paragrafo-assista">Veja em qualquer lugar. Cancele quando quiser.</p>
+            <p id="paragrafo-pronto">Quer começar a ver? Introduza o seu e-mail para criar ou reativar a sua conta.</p>
+
+            <div id="formulario">
+                <input placeholder="Email">
+                <button id="botao-email">Vamos lá <img src="./img/seta.svg" alt="seta"></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <h2>Perguntas Frequentes</h2>
+        <button id="botao-pergunta">O que é a Netflix ?<img id="imagem-pergunta" src="./img/fechar.svg"></button>
+        <div id="pergunta">
+            <p class="paragrafo-pergunta">Netflix é um serviço de streaming que oferece uma grande variedade de séries
+                de televisão, filmes,
+                títulos de animé, documentários e outros conteúdos premiados que podem ser vistos em milhares de
+                dispositivos com uma ligação à internet.
+            </p>
+            <br>
+            <p class="paragrafo-pergunta">Pode ver tudo o que quiser, quando quiser, sem anúncios. Tudo por um baixo
+                custo mensal. Há sempre novos
+                conteúdos para descobrir e todas as semanas são adicionados novos filmes e séries!
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    let botao = document.getElementById("botao-pergunta")
+    let menu = document.getElementById("pergunta")
+    let imagem = document.getElementById("imagem-pergunta")
+    
+    function abacate() {
+        if (menu.style.display == "none") {
+            menu.style.display = "block"
+            imagem.id = "imagem-pergunta-girar"
+        } else {
+            menu.style.display = "none"
+            imagem.id = "imagem-pergunta"
+        }
+    }
+
+    botao.addEventListener("click", abacate)
+
+
+</script>
+
+</html>
