@@ -5,4 +5,4 @@ Netflix clone initial project using HTML, CSS and JavaScrip.
 
 Confira aplicação: https://devofinfinity.github.io/Clone-Netflix/
 
-<img src="./img/NetFlixFinal.png" alt=">
+<img src="./img/NetFlixFinal.png" alt="">
